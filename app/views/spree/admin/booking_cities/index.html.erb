@@ -8,12 +8,15 @@
     <th>Country</th>
     <th></th>
     <th></th>
+    <th></th>
+
 
   </tr>
 
 <% @booking_cities.each do |booking_city| %>
   <tr>
     <td><%= booking_city.name %></td>
+    <td><%= booking_city.booking_group_id %></td>
     <td><%= booking_city.booking_country_id %></td>
     <td><%= link_to 'Show', admin_booking_city_path(booking_city)  %></td>
     <td><%= link_to 'Edit', edit_admin_booking_city_path(booking_city) %></td>

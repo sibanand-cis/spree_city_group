@@ -6,10 +6,7 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :group_id %><br />
-    <%= f.collection_select :group_id,@booking_groups,:id,:name %>
-  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

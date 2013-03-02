@@ -22,9 +22,7 @@ class Spree::Admin::BookingCountriesController < Spree::Admin::BaseController
   # GET /booking_cities/new.json
   def new
     @booking_country = BookingCountry.new
-    @booking_groups = BookingGroup.all
-
-    respond_to do |format|
+      respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @booking_country }
     end
@@ -33,7 +31,6 @@ class Spree::Admin::BookingCountriesController < Spree::Admin::BaseController
   # GET /booking_cities/1/edit
   def edit
     @booking_country = BookingCountry.find(params[:id])
-    @booking_groups = BookingGroup.all
   end
 
   # POST /booking_cities
