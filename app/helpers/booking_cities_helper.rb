@@ -1,0 +1,2 @@
+module BookingCitiesHelper
+end

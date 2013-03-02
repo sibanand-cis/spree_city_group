@@ -1,0 +1,2 @@
+module BookingCountriesHelper
+end
