@@ -9,10 +9,6 @@
     <%= f.label :booking_country_id %><br />
     <%= f.collection_select :booking_country_id,@booking_countries,:id,:name,:selected => 1082%>
   </div>
-   <div class="field">
-    <%= f.label :booking_group_id %><br />
-    <%= f.collection_select :booking_group_id,@booking_groups,:id,:name %>
-  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

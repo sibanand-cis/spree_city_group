@@ -1,0 +1,16 @@
+booking_postal_codes_id<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @booking_postal_code.booking_postal_codes_id %>
+</p>
+
+<p>
+  <b>Booking group:</b>
+  <%= @booking_postal_code.booking_group_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_booking_postal_code_path(@booking_postal_code) %> |
+<%= link_to 'Back', admin_booking_postal_codes_path %>
+

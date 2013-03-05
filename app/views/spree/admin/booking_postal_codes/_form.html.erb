@@ -1,0 +1,26 @@
+<%= semantic_form_for([:admin,@booking_postal_code]) do |f| %>
+
+  <% if @booking_postal_code.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@booking_postal_code.errors.count, "error") %> prohibited this booking_postal_code from being saved:</h2>
+
+      <ul>
+      <% @booking_postal_code.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :booking_postal_codes_id %><br />
+    <%= f.text_field :booking_postal_codes_id %>
+  </div>
+  <div class="field">
+    <%= f.label :booking_group_id %><br />
+    <%= f.collection_select :booking_group_id,@booking_groups,:id,:name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

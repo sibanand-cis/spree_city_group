@@ -1,13 +1,5 @@
-<%= semantic_form_for([:admin,@booking_group]) do |f| %>
+<h1>Edit Group</h1>
 
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+<%= render :partial => "form"%>
 
 <%= link_to 'Back', admin_booking_groups_path %>

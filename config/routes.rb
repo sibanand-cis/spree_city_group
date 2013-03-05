@@ -1,5 +1,8 @@
 Spree::Core::Engine.routes.draw do
 
+  resources :booking_postal_codes
+
+
   resources :booking_groups
   resources :booking_countries 
   resources :booking_cities
@@ -11,6 +14,7 @@ Spree::Core::Engine.routes.draw do
   	resources :booking_groups
   	resources :booking_countries
   	resources :booking_cities
+    resources :booking_postal_codes
   end
 
 

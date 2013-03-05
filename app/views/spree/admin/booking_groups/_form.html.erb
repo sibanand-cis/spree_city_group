@@ -1,0 +1,19 @@
+<%= semantic_form_for([:admin,@booking_group]) do |f| %>
+
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :pickup_price %><br />
+    <%= f.text_field :pickup_price %>
+  </div>
+  <div class="field">
+    <%= f.label :dropoff_price %><br />
+    <%= f.text_field :dropoff_price %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

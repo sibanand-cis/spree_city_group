@@ -5,7 +5,8 @@
   <tr>
 
     <th>Group Name</th>
-
+    <th>Pickup Price</th>
+    <th>DropOff Price</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,6 +15,8 @@
 <% @booking_groups.each do |booking_group| %>
   <tr>
     <td><%= booking_group.name %></td>
+    <td><%= booking_group.pickup_price %></td>
+    <td><%= booking_group.dropoff_price %></td>
     <td><%= link_to 'Show', admin_booking_group_path(booking_group) %></td>
     <td><%= link_to 'Edit', edit_admin_booking_group_path(booking_group) %></td>
     <td><%= link_to 'Destroy', admin_booking_group_path(booking_group), method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -1,0 +1,26 @@
+<%= button_link_to 'New Booking postal code', new_admin_booking_postal_code_path %>
+
+<h1>Listing Booking Postal Codes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Booking group id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @booking_postal_codes.each do |booking_postal_code| %>
+  <tr>
+    <td><%= booking_postal_code.booking_postal_codes_id %></td>
+    <td><%= booking_postal_code.booking_group_id%></td>
+    <td><%= link_to 'Show', admin_booking_postal_code_path(booking_postal_code) %></td>
+    <td><%= link_to 'Edit', edit_admin_booking_postal_code_path(booking_postal_code) %></td>
+    <td><%= link_to 'Destroy', admin_booking_postal_code_path(booking_postal_code), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
