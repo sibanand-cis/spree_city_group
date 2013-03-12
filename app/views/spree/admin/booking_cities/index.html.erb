@@ -15,7 +15,7 @@
 <% @booking_cities.each do |booking_city| %>
   <tr>
     <td><%= booking_city.name %></td>
-    <td><%= booking_city.booking_country_id %></td>
+    <td><%= booking_city.booking_country.name %></td>
     <td><%= link_to 'Show', admin_booking_city_path(booking_city)  %></td>
     <td><%= link_to 'Edit', edit_admin_booking_city_path(booking_city) %></td>
     <td><%= link_to 'Destroy', admin_booking_city_path(booking_city), method: :delete, data: { confirm: 'Are you sure?' } %></td>
